@@ -3,24 +3,10 @@
 ### Usage
 ```go
 func main() {
-	flagJson := `[
-		{
-			"Name": "DarkMode",
-			"Description": "Enables the dark mode theme across the application",
-			"Status": "Enabled"
-		},
-		{
-			"Name": "FeatureX",
-			"Description": "Activates Feature X in the application",
-			"Status": "Disabled"
-		}
-	]`
-	getFlagByName := LaunchLever(flagJson)
-	var darkMode Toggle
-	if toggle, found := getFlagByName("DarkMode"); found {
-		darkMode = toggle
-	}
-	fmt.Println("Hello, 世界", darkMode.Status)
+	
+	isEnabled := LaunchLever(flagJson)
+	dark_mode := isEnabled("DarkMode")
+	fmt.Println("Is dark mode enabled?", enabled)
 }
 
 ```
