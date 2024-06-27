@@ -1,0 +1,11 @@
+{
+	"pfx_123": {
+		"description": "A very simple yellow button",
+		"enabled": true
+	},
+	"pfx_223": {
+		"description": "Another very simple button",
+		"enabled": false
+	}
+}
+
